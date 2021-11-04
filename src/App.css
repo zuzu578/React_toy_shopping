@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+.jumbotron{
+  background-color: #bbbfbd;
+  padding-top:50px;
+  padding-bottom: 50px;
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+  background-size:cover;
+  color:white;
+
+
+}
