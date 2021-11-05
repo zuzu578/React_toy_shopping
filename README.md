@@ -81,9 +81,26 @@ function changeStatus(){
 
 
 
+# 리액트에서 라우터를 이용하기
+리액트에서 라우터를 이용하여 페이지를 이동할수있습니다.
+npm install react-router-dom@5 
+을 이용하여 라우터를 설치합니다.
 
 
+<img width="509" alt="스크린샷 2021-11-06 오전 12 41 24" src="https://user-images.githubusercontent.com/69393030/140537987-c5e58fc9-637c-403d-bb5c-05c3cea9e653.png">
 
+라우터 설치후 , index.js에 저렇게 선언해줍니다.
+
+
+<img width="510" alt="스크린샷 2021-11-06 오전 12 42 09" src="https://user-images.githubusercontent.com/69393030/140538108-1a8f84be-adc0-4bb6-a103-20810c2245ac.png">
+그런다음 리액트 라우터를 import 해줍니다.
+
+<img width="587" alt="스크린샷 2021-11-06 오전 12 42 39" src="https://user-images.githubusercontent.com/69393030/140538181-fbf1a1d5-8fee-491f-8e0e-c661dcea40e3.png">
+
+라우터를 자신이 원하는 link 에 이용해줍니다.
+<img width="619" alt="스크린샷 2021-11-06 오전 12 43 10" src="https://user-images.githubusercontent.com/69393030/140538271-3e4fe6a9-3328-4639-8c30-bd7d229d6c24.png">
+자신이 라우터로 이동할 component 에  
+let {id} = useParams(); // requestParameter  이런식으로 받아줍니다. 
 
 # Getting Started with Create React App
 
