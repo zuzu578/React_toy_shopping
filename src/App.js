@@ -6,6 +6,9 @@ import { useState } from 'react';
 import productList from './data.js'; // 상품list data 정보 import!
 import JumboItems from './JumboItems.js'; // 점보item import!
 import NavItem from './NavBarItems'; // 네비게이션 바 item import! 
+import ProductDetail from './productDetail';
+
+import{Link,Route,Switch} from 'react-router-dom';
 function App() {
   /**
    * state 위치 
@@ -28,7 +31,7 @@ function App() {
              return <div className="col-md-4">
              <img src={props.getProductData[idx].image } alt="product_image" width="100%"/>
         
-             <h4> {[props.getProductData[idx].title]}</h4>
+             <h4> <Link to={`/detail/${props.getProductData[idx].id}`}>{[props.getProductData[idx].title]}</Link></h4>
              <p>{[props.getProductData[idx].content]} </p>
              <p> {[props.getProductData[idx].price]}</p>
              </div>
@@ -41,13 +44,24 @@ function App() {
     );
   }
 
+ 
   
   
   return (
     <div className="App">
    <NavItem/>
+  
+
+    <Route exact path="/">
     <JumboItems/>
     <ProductInfo getProductData = {shoes}/>
+    </Route>
+     
+    <Route path="/detail/:id">
+      <ProductDetail getDetailData ={shoes}/>
+    </Route>
+ 
+    
     </div>
   );
 

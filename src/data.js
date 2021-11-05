@@ -1,6 +1,7 @@
+
 var productList =  [
     {
-      id : 0,
+      id : 20,
       title : "White and Black",
       content : "Born in France",
       price : 120000,
@@ -8,7 +9,7 @@ var productList =  [
     },
   
     {
-      id : 1,
+      id : 54,
       title : "Red Knit",
       content : "Born in Seoul",
       price : 110000,
@@ -16,7 +17,7 @@ var productList =  [
     },
   
     {
-      id : 2,
+      id : 35,
       title : "Grey Yordan",
       content : "Born in the States",
       price : 130000,
@@ -24,4 +25,4 @@ var productList =  [
     }
   ] 
 
-  export default productList
+  export default productList;
